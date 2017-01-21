@@ -1,0 +1,41 @@
+:root {
+  --brand-blue: #398CDA;
+  --brand-black: #363636;
+  --brand-grey: #F3F3F3;
+  --brand-dark-grey: #7d7d7d;
+  --brand-border-grey: #ddd;
+  --brand-white: #FFFFFF;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.top-nav {
+  border-bottom: 1px solid var(--brand-grey);
+}
+
+.nav-link {
+  color: var(--brand-black);
+}
+
+
+.navbar-light .navbar-toggler {
+  border-color: var(--brand-border-grey);
+  background-color:var(--brand-blue);
+}
+
+/* .navbar-toggler-icon { */
+/*   border-top: 1px solid white; */
+/*   border-bottom: 1px solid white; */
+/*   background-color: blue; */
+/* } */
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  margin: 4px;
+}

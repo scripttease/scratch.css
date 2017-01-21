@@ -1,0 +1,205 @@
+:root {
+  --brand-blue: #398CDA;
+  --brand-black: #363636;
+  --brand-grey: #F3F3F3;
+  --brand-dark-grey: #7d7d7d;
+  --brand-border-grey: #ddd;
+  --brand-white: #FFFFFF;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* testing */
+
+.star-six {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  position: relative;
+}
+.star-six:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
+
+
+
+.button {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: 50px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  
+  /*Rounded Corners and Shadows*/
+  border-radius: 100px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+
+  /*Ridiculous Gradient Syntax*/
+  background: #e51d16; 
+  background: linear-gradient( to top, #e51d16, 0%,#b21203, 100%); /* W3C */
+}
+
+.button:before {
+  content:"";
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  position: relative;
+  padding: 15px;
+  background: #ddd;
+  left: -15px;
+  top: -15px;
+  border-radius: 115px;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.4);
+  box-sizing: initial;
+}/* end testing */
+
+
+.entire-top {
+  width: 100%;
+  margin: auto;
+}
+
+.banner-container {
+  width: 60%;
+  margin: auto;
+}
+
+.scaling-svg-container {
+ // background: url("/../images/rainbanner.png") top center no-repeat;
+ width: 100%; 
+ // background-size: cover;
+ height: 0; 
+ padding: 0; /*reset*/
+ padding-bottom: 56%; 
+ /* override this inline for aspect ratio other than square */
+ /* padding-bottom css tricks hack to preserve aspect ratio, background image height/width = 275/491=56% */
+}
+
+.nav-link {
+  color: var(--brand-black);
+}
+
+
+.navbar-light .navbar-toggler {
+  border-color: var(--brand-border-grey);
+  background-color: hotpink;
+}
+
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+  margin: 4px;
+}
+
+.navbar-brand {
+  border-bottom: #F0776C 3px solid;
+  padding-bottom: 6px;
+}
+
+.nav li {
+  border-bottom: transparent 3px solid;
+}
+.nav li:hover:nth-child(8n+1), .nav li:active:nth-child(8n+1){
+  border-bottom: #C4E17F 3px solid;
+}
+.nav li:hover:nth-child(8n+2), .nav li:active:nth-child(8n+2){
+  border-bottom: #F7FDCA 3px solid;
+}
+.nav li:hover:nth-child(8n+3), .nav li:active:nth-child(8n+3){
+  border-bottom: #FECF71 3px solid;
+}
+.nav li:hover:nth-child(8n+4), .nav li:active:nth-child(8n+4){
+  border-bottom: #F0776C 3px solid;
+}
+.nav li:hover:nth-child(8n+5), .nav li:active:nth-child(8n+5){
+  border-bottom: #DB9DBE 3px solid;
+}
+.nav li:hover:nth-child(8n+6), .nav li:active:nth-child(8n+6){
+  border-bottom: #C49CDE 3px solid;
+}
+.nav li:hover:nth-child(8n+7), .nav li.active:nth-child(8n+7){
+  border-bottom: #669AE1 3px solid;
+}
+.nav li:hover:nth-child(8n+8), .nav li.active:nth-child(8n+8){
+  border-bottom: #62C2E4 3px solid;
+}
+
+.banner-container { width: 30%; margin: auto; }
+
+.scaling-svg-container { width: 100%; height: 0; padding: 0; /*reset*/ padding-bottom: 56%; /* override this inline for aspect ratio other than square */ /* padding-bottom css tricks hack to preserve aspect ratio, background image height/width = 275/491=56% */ }
+
+.svg-s { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 367.54; stroke-dashoffset: 367.54; animation-name: dash; animation-duration: 0.6s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 1.5s; }
+
+.svg-c { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 187.79; stroke-dashoffset: 187.79; animation-name: dash; animation-duration: 0.45s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 1.95s; }
+
+.svg-r-a { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 136.16; stroke-dashoffset: 136.16; animation-name: dash; animation-duration: 0.225s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 2.175s; }
+
+.svg-r-b { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 128.58; stroke-dashoffset: 128.58; animation-name: dash; animation-duration: 0.225s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 2.4s; }
+
+.svg-i { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 111.98; stroke-dashoffset: 111.98; animation-name: dash; animation-duration: 0.225s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 2.625s; }
+
+.svg-dot { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 47.31; stroke-dashoffset: 47.31; animation-name: dash; animation-duration: 0.225; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 2.55s; }
+
+.svg-p-a { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 190.8; stroke-dashoffset: 190.8; animation-name: dash; animation-duration: 0.225s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 2.775s; }
+
+.svg-p-b { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 161.9; stroke-dashoffset: 161.9; animation-name: dash; animation-duration: 0.225s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 3.0s; }
+
+.svg-t { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 180.05; stroke-dashoffset: 180.05; animation-name: dash; animation-duration: 0.30s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 3.3s; }
+
+.svg-t-bar { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 46.58; stroke-dashoffset: 46.58; animation-name: dash; animation-duration: 0.15s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 3.55s; }
+
+.svg-ttwo { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 191.16; stroke-dashoffset: 191.16; animation-name: dash; animation-duration: 0.35s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 3.8s; }
+
+.svg-ttwo-bar { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 53.37; stroke-dashoffset: 53.37; animation-name: dash; animation-duration: 0.15s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 4.05s; }
+
+.svg-e { fill: none; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 238.86; stroke-dashoffset: 238.86; animation-name: dash; animation-duration: 0.45s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 4.5s; }
+
+.svg-a { fill: none; opacity: 1; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 301.2324; stroke-dashoffset: 301.2324; animation-name: dash; animation-duration: 0.45s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 4.95s; }
+
+.svg-stwo { fill: none; opacity: 1; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 208.03; stroke-dashoffset: 208.03; animation-name: dash; animation-duration: 0.45s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 5.4s; }
+
+.svg-etwo { fill: none; opacity: 1; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 246.35; stroke-dashoffset: 246.35; animation-name: dash; animation-duration: 0.45s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 5.85s; }
+
+@keyframes dash { 10% { stroke-width: 6; }
+  to { stroke-width: 6; stroke-dashoffset: 0; } }
+.raindrop-path { opacity: 0; animation-name: fade; animation-duration: 3s; animation-timing-function: ease-in-out; }
+
+
+.raindrop-path {
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
