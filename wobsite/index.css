@@ -1,9 +1,14 @@
 :root {
-  --brand-blue: #398CDA;
-  --brand-black: #363636;
+  --brand-red: #f55a4e;
+  --brand-orange: #ffa21a;
+  /* --brand-yellow: #398CDA; */
+  --brand-green: #5cb860;
+  --brand-blue: #00d3ee;
+  --brand-purple: #962eaf;
+  /* --brand-pink: #398CDA; */
   --brand-grey: #F3F3F3;
-  --brand-dark-grey: #7d7d7d;
   --brand-border-grey: #ddd;
+  --brand-black: #363636;
   --brand-white: #FFFFFF;
 }
 
@@ -43,7 +48,7 @@ body {
 /*   color: white; */
 /*   text-align: center; */
 /*   line-height: 100px; */
-  
+
 /*   /*Rounded Corners and Shadows*/ */
 /*   border-radius: 100px; */
 /*   box-shadow: 2px 2px 4px rgba(0,0,0,0.4); */
@@ -83,17 +88,17 @@ body {
   height: 35vh;
   position: absolute;
   top: 0;
-  /* height: auto; */
 }
 
 .nav-link {
   color: var(--brand-black);
+  font-size: 1.25rem;
 }
 
 
 .navbar-light .navbar-toggler {
   border-color: var(--brand-border-grey);
-  background-color: hotpink;
+  background-color: var(--brand-red);
 }
 
 
@@ -107,36 +112,36 @@ body {
 }
 
 .navbar-brand {
-  border-bottom: #F0776C 3px solid;
+  border-bottom: var(--brand-red) 3px solid;
   padding-bottom: 6px;
 }
 
 .nav li {
-  border-bottom: red 3px solid;
+  border-bottom: var(--brand-red) 3px solid;
 }
 .nav li:hover:nth-child(8n+1), .nav li:active:nth-child(8n+1){
-  border-bottom: #C4E17F 3px solid;
+  border-bottom: var(--brand-orange) 3px solid;
 }
 .nav li:hover:nth-child(8n+2), .nav li:active:nth-child(8n+2){
-  border-bottom: #F7FDCA 3px solid;
+  border-bottom: var(--brand-green) 3px solid;
 }
 .nav li:hover:nth-child(8n+3), .nav li:active:nth-child(8n+3){
-  border-bottom: #FECF71 3px solid;
+  border-bottom: var(--brand-blue) 3px solid;
 }
 .nav li:hover:nth-child(8n+4), .nav li:active:nth-child(8n+4){
-  border-bottom: #F0776C 3px solid;
+  border-bottom: var(--brand-purple) 3px solid;
 }
 .nav li:hover:nth-child(8n+5), .nav li:active:nth-child(8n+5){
-  border-bottom: #DB9DBE 3px solid;
+  border-bottom: var(--brand-red) 3px solid;
 }
 .nav li:hover:nth-child(8n+6), .nav li:active:nth-child(8n+6){
-  border-bottom: #C49CDE 3px solid;
+  border-bottom:  var(--brand-orange) 3px solid;
 }
 .nav li:hover:nth-child(8n+7), .nav li.active:nth-child(8n+7){
-  border-bottom: #669AE1 3px solid;
+  border-bottom: var(--brand-green) 3px solid;
 }
 .nav li:hover:nth-child(8n+8), .nav li.active:nth-child(8n+8){
-  border-bottom: #62C2E4 3px solid;
+  border-bottom: var(--brand-blue) 3px solid;
 }
 
 .banner-container { width: 30%; margin: auto; }
@@ -176,7 +181,7 @@ body {
 .svg-etwo { fill: none; opacity: 1; stroke: #370F38; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 246.35; stroke-dashoffset: 246.35; animation-name: dash; animation-duration: 0.45s; animation-timing-function: linear; animation-fill-mode: forwards; animation-delay: 5.85s; }
 
 @keyframes dash { 10% { stroke-width: 6; }
-  to { stroke-width: 6; stroke-dashoffset: 0; } }
+to { stroke-width: 6; stroke-dashoffset: 0; } }
 .raindrop-path { opacity: 0; animation-name: fade; animation-duration: 3s; animation-timing-function: ease-in-out; }
 
 
@@ -196,5 +201,42 @@ body {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.avatar img {
+  max-width: 160px;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.github-image2 {
+  max-width: 121px;
+  max-height: 129px;
+}
+
+.card-image-block {
+  overflow: hidden;
+  height: 9rem;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+@media (min-width: 576px) {
+  .btn-circle-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 25px;
+    /* how does bootstrap make its sizing responsive - need for this button */
   }
 }

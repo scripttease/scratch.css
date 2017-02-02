@@ -7,7 +7,7 @@ function rainbowRain() {
   mySVG.setAttribute("width", "100%");
   mySVG.setAttribute("height", "35vh");
 
-  mySVG.setAttribute("viewBox", 0, 0, 1600, 300);
+  mySVG.setAttribute("viewBox", "0, 0, 1600, 300");
   mySVG.setAttribute("preserveAspectRatio","xMidYMid slice");
   mySVG.setAttribute("class","rain-svg");
   svgMum = document.getElementById("rc1");
